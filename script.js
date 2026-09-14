@@ -1,5 +1,5 @@
 let events = JSON.parse(localStorage.getItem("campusEvents")) || [
-
+    
     {
         id: 1,
         name: "TechFest 2026",
