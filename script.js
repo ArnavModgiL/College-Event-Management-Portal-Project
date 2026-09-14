@@ -1,14 +1,3 @@
-/* =====================================================
-   CAMPUSCONNECT
-   FRONTEND ONLY
-   NO BACKEND / NO REAL LOGIN
-===================================================== */
-
-
-/* =====================================================
-   SAMPLE EVENTS
-===================================================== */
-
 let events = JSON.parse(localStorage.getItem("campusEvents")) || [
 
     {
@@ -98,10 +87,6 @@ let events = JSON.parse(localStorage.getItem("campusEvents")) || [
 ];
 
 
-/* =====================================================
-   LOADING SCREEN
-===================================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
 
     let progress = 0;
@@ -151,11 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 loadingScreen.classList.add("hidden");
 
-                /*
-                   Always show login first.
-                   User can enter ANY credentials.
-                */
-
                 loginPage.classList.remove("hidden");
 
             }, 400);
@@ -186,10 +166,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* =====================================================
-   LOGIN
-===================================================== */
-
 function setupLogin() {
 
     const form =
@@ -206,16 +182,6 @@ function setupLogin() {
 
         const password =
             document.getElementById("loginPassword").value.trim();
-
-
-        /*
-           IMPORTANT:
-
-           There is NO real authentication.
-
-           ANY non-empty email/student ID
-           and ANY non-empty password will work.
-        */
 
         if (email === "" || password === "") {
 
@@ -256,10 +222,6 @@ function setupLogin() {
 
 }
 
-
-/* =====================================================
-   REGISTER
-===================================================== */
 
 function setupRegister() {
 
@@ -310,11 +272,6 @@ function setupRegister() {
 
 }
 
-
-/* =====================================================
-   LOGIN / REGISTER SWITCH
-===================================================== */
-
 function showRegister() {
 
     document
@@ -351,11 +308,6 @@ function forgotPassword() {
 
 }
 
-
-/* =====================================================
-   PASSWORD SHOW / HIDE
-===================================================== */
-
 function setupPasswordToggle() {
 
     const button =
@@ -385,10 +337,6 @@ function setupPasswordToggle() {
 
 }
 
-
-/* =====================================================
-   RENDER EVENTS
-===================================================== */
 
 function renderEvents(list = events) {
 
@@ -479,11 +427,6 @@ function renderEvents(list = events) {
 
 }
 
-
-/* =====================================================
-   EVENT DETAILS
-===================================================== */
-
 function openEvent(id) {
 
     const event =
@@ -560,11 +503,6 @@ function closeModal() {
 
 }
 
-
-/* =====================================================
-   REGISTRATION
-===================================================== */
-
 function registerEvent(id) {
 
     let registrations =
@@ -602,11 +540,6 @@ function registerEvent(id) {
     );
 
 }
-
-
-/* =====================================================
-   MY REGISTRATIONS
-===================================================== */
 
 function renderRegistrations() {
 
@@ -723,11 +656,6 @@ function cancelRegistration(id) {
 
 }
 
-
-/* =====================================================
-   SEARCH + FILTER
-===================================================== */
-
 function setupSearch() {
 
     const search =
@@ -822,11 +750,6 @@ function filterCategory(category) {
         });
 
 }
-
-
-/* =====================================================
-   CALENDAR
-===================================================== */
 
 let currentCalendarDate =
     new Date(2026, 8, 1);
@@ -960,11 +883,6 @@ function changeMonth(direction) {
 
 }
 
-
-/* =====================================================
-   PROFILE
-===================================================== */
-
 function editProfile() {
 
     const currentName =
@@ -998,11 +916,6 @@ function editProfile() {
     );
 
 }
-
-
-/* =====================================================
-   ADMIN ADD EVENT
-===================================================== */
 
 function addEvent() {
 
@@ -1100,11 +1013,6 @@ function addEvent() {
 
 }
 
-
-/* =====================================================
-   HAMBURGER
-===================================================== */
-
 function setupHamburger() {
 
     const hamburger =
@@ -1143,11 +1051,6 @@ function setupHamburger() {
         });
 
 }
-
-
-/* =====================================================
-   DARK MODE
-===================================================== */
 
 function setupTheme() {
 
@@ -1197,11 +1100,6 @@ function setupTheme() {
 
 }
 
-
-/* =====================================================
-   LOGOUT
-===================================================== */
-
 function logout() {
 
     localStorage.removeItem(
@@ -1233,11 +1131,6 @@ function logout() {
 
 }
 
-
-/* =====================================================
-   SCROLL
-===================================================== */
-
 function scrollToEvents() {
 
     document
@@ -1247,11 +1140,6 @@ function scrollToEvents() {
         });
 
 }
-
-
-/* =====================================================
-   TOAST
-===================================================== */
 
 let toastTimer;
 
