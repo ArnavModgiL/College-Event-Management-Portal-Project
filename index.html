@@ -24,13 +24,9 @@
             </div>
 
             <div id="progressText">0%</div>
-
             <span class="loading-text"> Preparing your campus experience...</span>
-
         </div>
-
     </div>
-
 
     <section id="loginPage" class="login-page hidden">
 
@@ -114,8 +110,6 @@
             </div>
         </div>
     </section>
-
-
     <section id="registerPage" class="register-page hidden">
 
         <div class="register-box">
@@ -131,7 +125,6 @@
                 <input
                     type="text" id="regName"placeholder="Full Name"
                     required >
-
                 <input
                     type="text"
                     id="regStudent"
@@ -152,7 +145,6 @@
                     placeholder="Phone Number"
                     required
                 >
-
                 <select id="regCourse" required>
 
                     <option value="">
@@ -166,8 +158,6 @@
                     <option>MBA</option>
 
                 </select>
-
-
                 <select id="regSemester" required>
 
                     <option value="">
@@ -184,29 +174,23 @@
                     <option>8th Semester</option>
 
                 </select>
-
-
                 <input
                     type="password"
                     id="regPassword"
                     placeholder="Password"
-                    required
-                >
+                    required >
 
                 <input
                     type="password"
                     id="regConfirm"
                     placeholder="Confirm Password"
-                    required
-                >
-
-
+                    required >
+                
                 <button type="submit" class="login-btn">
                     Create Account
                 </button>
 
             </form>
-
 
             <p class="login-register">
 
@@ -221,13 +205,8 @@
         </div>
 
     </section>
-
-
-    <!-- ================= MAIN PORTAL ================= -->
+    
     <div id="portal" class="portal hidden">
-
-
-        <!-- NAVBAR -->
 
         <nav class="navbar">
 
@@ -244,8 +223,7 @@
 
             <button
                 class="hamburger"
-                id="hamburger"
-            >
+                id="hamburger">
                 ☰
             </button>
 
@@ -268,8 +246,7 @@
 
                 <button
                     class="theme-btn"
-                    id="themeToggle"
-                >
+                    id="themeToggle" >
                     🌙
                 </button>
 
@@ -283,9 +260,6 @@
             </div>
 
         </nav>
-
-
-        <!-- ================= HOME ================= -->
 
         <main id="home">
 
@@ -302,37 +276,26 @@
                         Participate.<br>
                         <span>Celebrate.</span>
                     </h1>
-
                     <p>
                         Explore exciting college events, workshops,
                         competitions, cultural fests and sports activities
                         happening around your campus.
                     </p>
-
                     <div class="hero-buttons">
 
                         <button
                             onclick="scrollToEvents()"
-                            class="primary-btn"
-                        >
+                            class="primary-btn" >
                             Explore Events →
                         </button>
-
                         <button
                             onclick="showToast('Welcome to CampusConnect!')"
-                            class="secondary-btn"
-                        >
+                            class="secondary-btn" >
                             Learn More
                         </button>
-
                     </div>
-
                 </div>
-
             </section>
-
-
-            <!-- ================= STATS ================= -->
 
             <section class="stats">
 
@@ -358,13 +321,9 @@
 
             </section>
 
-
-            <!-- ================= EVENTS ================= -->
-
             <section
                 id="events"
-                class="section"
-            >
+                class="section" >
 
                 <div class="section-heading">
 
@@ -378,23 +337,16 @@
 
                     <button
                         class="view-all"
-                        onclick="showToast('Showing all events')"
-                    >
+                        onclick="showToast('Showing all events')" >
                         View All →
                     </button>
-
                 </div>
-
-
-                <!-- SEARCH -->
-
                 <div class="filters">
 
                     <input
                         type="text"
                         id="searchInput"
-                        placeholder="🔍 Search events..."
-                    >
+                        placeholder="🔍 Search events..." >
 
                     <select id="categoryFilter">
 
@@ -422,25 +374,17 @@
 
                     <input
                         type="date"
-                        id="dateFilter"
-                    >
+                        id="dateFilter" >
 
                 </div>
-
-
+                
                 <div
                     id="eventGrid"
-                    class="event-grid"
-                >
-
-                    <!-- JS INSERTS EVENTS -->
+                    class="event-grid" >
 
                 </div>
 
             </section>
-
-
-            <!-- ================= CATEGORIES ================= -->
 
             <section class="section category-section">
 
@@ -450,14 +394,11 @@
 
                         <span class="section-label">
                             DISCOVER
-                        </span>
-
+                      </span>
                         <h2>Event Categories</h2>
-
                     </div>
 
                 </div>
-
 
                 <div class="category-grid">
 
@@ -504,9 +445,6 @@
 
             </section>
 
-
-            <!-- ================= REGISTRATIONS ================= -->
-
             <section
                 id="registrations"
                 class="section"
@@ -525,8 +463,6 @@
                     </div>
 
                 </div>
-
-
                 <div id="registrationList">
 
                     <p class="empty-message">
@@ -536,9 +472,6 @@
                 </div>
 
             </section>
-
-
-            <!-- ================= CALENDAR ================= -->
 
             <section
                 id="calendar"
@@ -558,7 +491,6 @@
                     </div>
 
                 </div>
-
 
                 <div class="calendar-box">
 
@@ -586,18 +518,13 @@
 
             </section>
 
-
-            <!-- ================= ANNOUNCEMENTS ================= -->
-
             <section
                 id="announcements"
-                class="section announcements"
-            >
+                class="section announcements" >
 
                 <div class="section-heading">
 
                     <div>
-
                         <span class="section-label">
                             CAMPUS NEWS
                         </span>
@@ -629,11 +556,9 @@
                                 Students can register for coding,
                                 robotics and innovation competitions.
                             </p>
-
                         </div>
 
                     </article>
-
 
                     <article class="announcement">
 
@@ -658,13 +583,11 @@
 
                     </article>
 
-
                     <article class="announcement">
 
                         <div class="announcement-icon">
                             🎭
                         </div>
-
                         <div>
 
                             <span>September 4, 2026</span>
@@ -685,9 +608,6 @@
                 </div>
 
             </section>
-
-
-            <!-- ================= PROFILE ================= -->
 
             <section
                 id="profile"
@@ -761,9 +681,6 @@
                 </div>
 
             </section>
-
-
-            <!-- ================= ADMIN ================= -->
 
             <section
                 id="admin"
@@ -866,9 +783,6 @@
 
         </main>
 
-
-        <!-- ================= FOOTER ================= -->
-
         <footer>
 
             <div class="footer-logo">
@@ -887,12 +801,7 @@
             </div>
 
         </footer>
-
-
     </div>
-
-
-    <!-- ================= EVENT MODAL ================= -->
 
     <div
         id="eventModal"
