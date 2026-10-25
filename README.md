@@ -1,12 +1,52 @@
-# CampusConnect — Home section in React
+# 🎓 CampusConnect — College Event Management Portal
 
-This project preserves the original CampusConnect design and behavior. Only the existing `<main id="home">` content is mounted through React; the loading screen, login and registration pages, navbar, footer, event modal, toast, original stylesheet, and original JavaScript are retained from the supplied source files.
+**Discover. Participate. Celebrate.**
 
-## Run in VS Code
-1. Open this folder (`CampusConnect-React-Home-Exact`) in VS Code.
-2. Open **Terminal → New Terminal**. Ensure the terminal path ends in `CampusConnect-React-Home-Exact`.
-3. Run `npm install`.
-4. Run `npm run dev`.
-5. Open the localhost URL Vite prints.
+CampusConnect is a frontend web development project designed to make college events easier to discover, explore, and manage. It brings event listings, category filters, student registrations, an event calendar, campus announcements, and student profile details together in one interface.
 
-The original frontend uses localStorage and is not connected to a backend, just like the supplied version.
+The project focuses on creating a simple, interactive, and user-friendly experience for students to stay informed about activities happening around their campus.
+
+## ✨ Features
+
+### 🏠 Home Page
+- Modern landing page with a hero section.
+- Quick navigation to different sections of the portal.
+- Overview of campus events and activities.
+
+### 🎉 Event Discovery
+- Browse upcoming college events.
+- Search events by keyword.
+- Filter events by category, including Technology, Cultural, Sports, and Workshop.
+- Filter events by date.
+- Explore event information through organized event cards.
+
+### 📝 My Registrations
+- Dedicated section for student event registrations.
+- Displays an empty state when no events have been registered.
+- Helps students keep track of their selected activities.
+
+### 📅 Event Calendar
+- Calendar-style view for event planning.
+- Month navigation to explore dates.
+- Provides a convenient way to view event schedules.
+
+### 📢 Announcements
+- Dedicated campus news section.
+- Displays announcement dates, headlines, and descriptions.
+- Keeps important event updates organized.
+
+### 👤 Student Profile
+- Displays the student's name and avatar initials.
+- Shows Student ID, course, semester, and email.
+- Populates profile details using the account information saved during registration.
+
+### 🔐 Registration and Login
+- Student registration form.
+- Login using the registered email address or Student ID.
+- Password and confirmation validation.
+- Stores demo account information in browser `localStorage`.
+
+### 🛠️ Admin Dashboard
+- Dashboard-style event and registration summaries.
+- Form fields for entering event names, dates, venues, and categories.
+- Frontend event-management interactions for project demonstration
